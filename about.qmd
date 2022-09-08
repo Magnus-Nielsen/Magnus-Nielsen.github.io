@@ -1,7 +1,10 @@
 ---
-title: "About this website"
+title: "About"
 ---
 
 This is my personal website, where I display small snippets of code and bibliographical information about me. 
 
-![Say hi if you see me!](images/Malini_grey.jpg){width=500}
+<p style="text-align: center;">
+ <img src="images/Malini_grey.jpg" alt="A picture of Magnus in grayscale" width="50%" style="border-radius:10%"><br>
+Say hi if you see me!
+</p>
