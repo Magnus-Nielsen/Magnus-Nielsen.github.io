@@ -1,0 +1,34 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Magnus Lindgaard Nielsen"
+  search: false
+  navbar:
+    background: rgb(144,26,30)
+    right:
+      - href: index.qmd
+        text: Home
+      - href: teaching.qmd
+        text: Teaching
+      - href: code.qmd
+        text: Work
+      - href: about.qmd
+        text: About this website
+  page-footer:
+      left:
+        - icon: github
+          href: 'https://github.com/Magnus-Nielsen'
+        - icon: twitter
+          href: 'https://twitter.com/_Magnus_Nielsen'
+        - icon: linkedin
+          href: 'https://www.linkedin.com/in/magnus-lindgaard-nielsen-a420b6169/'
+      center: "\n [![](images/UCPH_logo.png){width=25}](https://www.ku.dk/english/)"
+      right: "Created using [quarto](https://quarto.org)"
+format:
+  html:
+    theme:
+      light: flatly 
+      dark: darkly
+    toc: true

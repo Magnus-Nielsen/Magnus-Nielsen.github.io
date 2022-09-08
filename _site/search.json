@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to my website!",
+    "section": "",
+    "text": "A picture of me"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About this website",
+    "section": "",
+    "text": "This is my personal website, where I display small snippets of code and bibliographical information about me."
+  },
+  {
+    "objectID": "quarto_example.html",
+    "href": "quarto_example.html",
+    "title": "Quarto Demo",
+    "section": "",
+    "text": "About me\n\n\n\npicture of Bert\n\n\n\n\nPictures and tables\n\n\nTable 1: Main Caption\n\n\n\n\n(a) First Table\n\n\n\na\nb\n\n\n\n\n0\n1\n3\n\n\n1\n2\n4\n\n\n\n\n\n\n(b) Second Table\n\n\n\nc\nd\n\n\n\n\n0\n1\n3\n\n\n1\n2\n4\n\n\n\n\n\n\n(c) Second Table\n\n\n\ne\nf\n\n\n\n\n0\n1\n3\n\n\n1\n2\n4\n\n\n\n\n\n\nSee ?@tbl-regression123 for the interesting results.\n\n\n\n\n\nFootnotes\n\n\nI stole this from someone else.↩︎\nWhich might not have been smart↩︎"
+  }
+]

@@ -1,0 +1,10 @@
+---
+title: "Teaching"
+---
+
+
+- [Introduction to Social Data Science](https://kurser.ku.dk/course/a%C3%98kk08216u/), Summer 2022
+- Coding Café, an offer to master's students in the [MSc in Social Data Science](https://studies.ku.dk/masters/social-data-science/) , mainly assisting with exercies in the two courses [Advanced Social Data Science I](https://kurser.ku.dk/archive/2021-2022/course/ASDK20004U) and [Advanced Social Data Science II](https://kurser.ku.dk/archive/2021-2022/course/ASDK20006U) in addition to helping students scrape data for use in their master's thesis, Spring 2022
+- [Social Data Analysis](https://kurser.ku.dk/archive/2020-2021/course/ASDK20005U), Spring 2021
+- [Principle of Economics A](https://kurser.ku.dk/archive/2018-2019/course/A%C3%98KB08001U), Fall 2018
+

@@ -1,0 +1,7 @@
+---
+title: "About this website"
+---
+
+This is my personal website, where I display small snippets of code and bibliographical information about me. 
+
+![Say hi if you see me!](images/Malini_grey.jpg){width=500}
