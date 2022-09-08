@@ -2,21 +2,21 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome to my website!",
+    "title": "Magnus Lindgaard Nielsen",
     "section": "",
-    "text": "My current research focuses on how to efficiently utilize data about the Danish youth to predict later life events.\nI’m part of the Nation-scale social networks project, which is a joint collaboration between the University of Copenhagen, Technical University of Denmark and Statistics Denmark."
+    "text": "I am a Ph.D. fellow at the Copenhagen Center for Social Data Science at the University of Copenhagen. My goal is to make the world a more data-driven place, both using predictive machine learning and by doing causal inference using quasi-experimental methods.\nMy current research focuses on how to efficiently utilize data about the Danish youth to predict later life events.\nI’m part of the Nation-scale social networks project, which is a joint collaboration between the University of Copenhagen, Technical University of Denmark and Statistics Denmark."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Magnus Lindgaard Nielsen",
     "section": "",
-    "text": "Say hi if you see me!"
+    "text": "This is my personal website, where I display small snippets of code and bibliographical information about me.\n\n Say hi if you see me!"
   },
   {
     "objectID": "teaching.html",
     "href": "teaching.html",
-    "title": "Teaching",
+    "title": "Magnus Lindgaard Nielsen",
     "section": "",
     "text": "Introduction to Social Data Science, Summer 2022\nCoding Café, an offer to master’s students in the MSc in Social Data Science , mainly assisting with exercies in the two courses Advanced Social Data Science I and Advanced Social Data Science II in addition to helping students scrape data for use in their master’s thesis, Spring 2022\nSocial Data Analysis, Spring 2021\nPrinciple of Economics A, Fall 2018"
   },

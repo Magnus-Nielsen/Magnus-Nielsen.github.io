@@ -1,7 +1,7 @@
 ---
-title: "About"
+title: ""
 ---
-
+# About
 This is my personal website, where I display small snippets of code and bibliographical information about me. 
 
 <p style="text-align: center;">

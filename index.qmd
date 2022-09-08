@@ -1,6 +1,4 @@
----
-title: "Welcome to my website!"
----
+# Welcome to my website!
 I am a Ph.D. fellow at the [Copenhagen Center for Social Data Science](https://sodas.ku.dk/) at the University of Copenhagen. My goal is to make the world a more data-driven place, both using predictive machine learning and by doing causal inference using quasi-experimental methods.
 
 My current research focuses on how to efficiently utilize data about the Danish youth to predict later life events.
