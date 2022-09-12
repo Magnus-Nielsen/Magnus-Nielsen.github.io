@@ -1,7 +1,9 @@
 # Welcome to my website!
-I am a Ph.D. fellow at the [Copenhagen Center for Social Data Science](https://sodas.ku.dk/) at the University of Copenhagen. My goal is to make the world a more data-driven place, both using predictive machine learning and by doing causal inference using quasi-experimental methods.
 
-My current research focuses on how to efficiently utilize data about the Danish youth to predict later life events.
+::: {layout-ncol=2}
+<div><p>I am a Ph.D. fellow at the [Copenhagen Center for Social Data Science](https://sodas.ku.dk/) at the University of Copenhagen. My goal is to make the world a more data-driven place, both using predictive machine learning and by doing causal inference using quasi-experimental methods.<br><br>My current research focuses on how to efficiently utilize data about the Danish youth to predict later life events.<br><br>I'm part of the [Nation-scale social networks](https://sodas.ku.dk/projects/nation-scale-social-networks/) project, which is a joint collaboration between the University of Copenhagen, Technical University of Denmark and Statistics Denmark.</p></div>
+
+<div class="column"><img src="images/Malini_grey.jpg" alt="A picture of Magnus in grayscale" width="100%" style="border-radius:10%"><br></div> 
+:::
 
 
-I'm part of the [Nation-scale social networks](https://sodas.ku.dk/projects/nation-scale-social-networks/) project, which is a joint collaboration between the University of Copenhagen, Technical University of Denmark and Statistics Denmark. 
