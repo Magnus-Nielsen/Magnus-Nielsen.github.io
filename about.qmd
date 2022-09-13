@@ -2,9 +2,6 @@
 title: ""
 ---
 # About
-This is my personal website, where I display small snippets of code and bibliographical information about me. 
+This is my personal website, where I display some of my previous work and bibliographical information about me.
 
-<p style="text-align: center;">
- <img src="images/Malini_grey.jpg" alt="A picture of Magnus in grayscale" width="50%" style="border-radius:10%"><br>
-Say hi if you see me!
-</p>
+In the future I hope to be able to include small snippets of code that I find useful - but at the current time, they're all saved at Statistics Denmark.

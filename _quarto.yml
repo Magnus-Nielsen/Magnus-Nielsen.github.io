@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Magnus Lindgaard Nielsen"
+  favicon: images/favicon.ico
   search: false
   navbar:
     background: rgb(144,26,30)
@@ -12,7 +13,7 @@ website:
         text: Home
       - href: teaching.qmd
         text: Teaching
-      - href: code.qmd
+      - href: work.qmd
         text: Work
       - href: about.qmd
         text: About
@@ -32,3 +33,4 @@ format:
       light: flatly 
       dark: darkly
     toc: true
+    toc-depth: 3

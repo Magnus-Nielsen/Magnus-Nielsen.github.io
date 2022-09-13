@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Magnus Lindgaard Nielsen",
     "section": "",
-    "text": "I am a Ph.D. fellow at the Copenhagen Center for Social Data Science at the University of Copenhagen. My goal is to make the world a more data-driven place, both using predictive machine learning and by doing causal inference using quasi-experimental methods.\nMy current research focuses on how to efficiently utilize data about the Danish youth to predict later life events.\nI’m part of the Nation-scale social networks project, which is a joint collaboration between the University of Copenhagen, Technical University of Denmark and Statistics Denmark."
+    "text": "I am a Ph.D. fellow at the Copenhagen Center for Social Data Science at the University of Copenhagen. My goal is to make the world a more data-driven place, both using predictive machine learning and by doing causal inference using quasi-experimental methods.My current research focuses on how to efficiently utilize data about the Danish youth to predict later life events.I’m part of the Nation-scale social networks project, which is a joint collaboration between the University of Copenhagen, Technical University of Denmark and Statistics Denmark."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Magnus Lindgaard Nielsen",
     "section": "",
-    "text": "This is my personal website, where I display small snippets of code and bibliographical information about me.\n\n Say hi if you see me!"
+    "text": "This is my personal website, where I display some of my previous work and bibliographical information about me.\nIn the future I hope to be able to include small snippets of code that I find useful - but at the current time, they’re all saved at Statistics Denmark."
   },
   {
     "objectID": "teaching.html",
@@ -26,5 +26,33 @@
     "title": "Magnus Lindgaard Nielsen",
     "section": "",
     "text": "As part of a seminar in applications of machine learning, I devised a method to dettect structural breaks in prediction or classification problems with repeated cross sections.\n\n\nA novel method to detect structural breaks in classification or prediction problems with repeated cross sections is proposed. The theoretical foundation is presented and the power and robustness of the method in a specific use case is showcased with a simulation study. The method utilizes that the generalization error of a model is an IID sample from a distribution which can only change between periods if the data generating process changes. Utilizing holdout data in each period, any changes in performance can then be attributed to a structural break in the data. This is tested utilizing tests for equality of means between the samples.\n\n\nCode\nimport numpy as np\nimport pandas as pd\n\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\nimport statsmodels.api as sm\n\nnp.random.seed(299)\nsns.color_palette('colorblind')\n\nnsample1 = 2000\nnsample2 = 500\nnsample3 = 500\n\n\n# period 1\nx1 = np.random.normal(size=nsample1)\nbeta1 = 4\ne1 = np.random.normal(size=nsample1, scale=2)\ny1 = np.dot(x1, beta1) + e1\n\n# development and holdout data\n\nx1tr = x1[:1500]\nx1te = x1[1500:]\n\ny1tr = y1[:1500]\ny1te = y1[1500:]\n\n# period 2\nx2 = np.random.normal(size=nsample2)\nbeta2 = 8\ne2 = np.random.normal(size=nsample2, scale=2)\ny2 = np.dot(x2, beta2) + e2\n\n# period 3\nx3 = np.random.normal(size=nsample3)\nbeta3 = 4\ne3 = np.random.normal(size=nsample3, scale=1)\ny3 = np.dot(x3, beta3) + e3\n\n# collection of targets\n\ny_list = [y1te, y2, y3]\n\n# fit model\nmodel = sm.OLS(y1tr, x1tr)\nresults = model.fit()\n\n# predict values\npred1 = results.predict(x1te)\npred2 = results.predict(x2)\npred3 = results.predict(x3)\n\n# list of predictions\npred_list = [pred1, pred2, pred3]\n\n# calculate mean squared errors\nerrs = {}\n    \nfor i in range(3):\n    errs[i+1] = [(i-j)**2 for (i,j) in zip(pred_list[i], y_list[i])]\n\n# convert to dataframe\ndf_from_dict = pd.DataFrame.from_dict(errs, orient='index').T\ndf_melt = pd.melt(df_from_dict.reset_index(), id_vars=['index'])\ndf = df_melt[['variable', 'value']]\ndf = df.rename(columns={'variable': 'Period', 'value': 'Mean squared error'})\n\n# create figure\n\nplt.figure(figsize=(9, 6))\nfig = sns.histplot(x=\"Mean squared error\",\n             data=df,\n             bins=25,\n             hue=\"Period\",\n             kde=True,\n             log_scale=True,\n             element=\"step\",\n             palette='colorblind')\n\n# change label and tick size\nfig.set_xlabel(\"Mean squared error\",fontsize=15)\nfig.set_ylabel(\"Count\",fontsize=15)\nfig.tick_params(labelsize=10)\n\nplt.show()\n\n\n\n\n\nFigure 1: Mean squared error distribution across time periods"
+  },
+  {
+    "objectID": "work.html",
+    "href": "work.html",
+    "title": "Magnus Lindgaard Nielsen",
+    "section": "",
+    "text": "Download pdf\n\n\nAs part of a seminar in applications of machine learning, I devised a method to detect structural breaks in prediction or classification problems with repeated cross sections. In Figure 1, I display the central idea of how structural breaks between time-periods causes a change in the distribution of the mean squared error between time-periods.\n\n\n\nFigure 1: Distribution of the mean squared error across time periods\n\n\n\n\n\nA novel method to detect structural breaks in classification or prediction problems with repeated cross sections is proposed. The theoretical foundation is presented and the power and robustness of the method in a specific use case is showcased with a simulation study. The method utilizes that the generalization error of a model is an IID sample from a distribution which can only change between periods if the data generating process changes. Utilizing holdout data in each period, any changes in performance can then be attributed to a structural break in the data. This is tested utilizing tests for equality of means between the samples."
+  },
+  {
+    "objectID": "work.html#abstract-1",
+    "href": "work.html#abstract-1",
+    "title": "Magnus Lindgaard Nielsen",
+    "section": "Abstract",
+    "text": "Abstract\nI provide new evidence on the causal effect of education on health using compulsory schooling reforms to obtain exogenous identification of education. I estimate the local average treatment effect to be a reduction in depressive symptoms by 0.11 per extra year of education induced by the schooling reforms, but the effect is not statistically significant. I show that there exists a lot of heterogeneity in the effect sizes, with the most robust finding being that women benefit most from additional education, but also observe indications that people with lower socioeconomic status also benefit more. However, all of the findings are associated with wide confidence intervals. The large amounts of heterogeneity, which varies across countries and other covariates, indicate that one should be wary of extrapolating findings in the literature to new settings without further research."
+  },
+  {
+    "objectID": "work.html#introduction",
+    "href": "work.html#introduction",
+    "title": "Magnus Lindgaard Nielsen",
+    "section": "Introduction",
+    "text": "Introduction\nAs part of a seminar in empirical health economics, I examined the effect of education on late-life depressive symptoms with a focus on heterogeneity across socio-economic status. I use instrumental variables with compulsory schooling reforms to obtain exogenous variation across european countries, principal component analysis to create a continuous measure of socio-economic status and causal forests to estimate conditional local average treatment effects. As the conditional local average treatment effects vary across countries and other covariates and are generally associated with wide confidence intervals, the main conclusion is that further research is needed before conclusions about the influence of education on late-life depressive symptoms can be made. The main finding can be seen in Figure 2, where the wide confidence almost always include a null effect.\n\n\n\nFigure 2: Influence of education on EURO-D scale depression symptoms across socio-economic status and gender"
+  },
+  {
+    "objectID": "work.html#introduction-1",
+    "href": "work.html#introduction-1",
+    "title": "Magnus Lindgaard Nielsen",
+    "section": "Introduction",
+    "text": "Introduction\nAs part of a seminar in empirical health economics, I examined the effect of education on late-life depressive symptoms with a focus on heterogeneity across socio-economic status. I use instrumental variables with compulsory schooling reforms to obtain exogenous variation across european countries, principal component analysis to create a continuous measure of socio-economic status and causal forests to estimate conditional local average treatment effects. As the conditional local average treatment effects vary across countries and other covariates and are generally associated with wide confidence intervals, the main conclusion is that further research is needed before conclusions about the influence of education on late-life depressive symptoms can be made. The main finding can be seen in Figure 2, where the wide confidence almost always include a null effect.\n\n\n\nFigure 2: Influence of education on EURO-D scale depression symptoms across socio-economic status and gender"
   }
 ]
