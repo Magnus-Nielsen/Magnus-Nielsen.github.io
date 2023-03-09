@@ -15,8 +15,6 @@ website:
         text: Teaching
       - href: work.qmd
         text: Work
-      - href: about.qmd
-        text: About
   page-footer:
       left:
         - icon: github
@@ -26,7 +24,6 @@ website:
         - icon: linkedin
           href: 'https://www.linkedin.com/in/magnus-lindgaard-nielsen-a420b6169/'
       center: "\n [![](images/UCPH_logo.png){width=25}](https://www.ku.dk/english/)"
-      right: "Created using [quarto](https://quarto.org)"
 format:
   html:
     theme:
